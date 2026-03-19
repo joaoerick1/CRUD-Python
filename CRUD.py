@@ -14,7 +14,7 @@ cursor = conexao.cursor()
 
 #CRUD
 nome_produto = "Lapis"
-comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}" ' #Texto MySQl precisa estar entre ""
+comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}" ' #Texto no MySQl precisa estar entre ""
 cursor.execute(comando)
 conexao.commit() #edita o banco de dados
 
